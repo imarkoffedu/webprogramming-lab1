@@ -1,0 +1,85 @@
+.footer {
+    background-color: #08132d;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+/* Download */
+.download {
+    border-top: 2px solid var(--border-color);
+    background-color: #fff;
+    background-image: url("/assets/img/main/download.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10%;
+}
+
+.download__title {
+    max-width: 550px;
+}
+
+.download__desc {
+    max-width: 650px;
+}
+
+.download__stores {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer__info {
+    padding: 75px 50px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    font-size: var(--logo-font-size);
+    font-weight: 600;
+}
+.footer__logo-accent {
+    color: var(--accent-color);
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__links {
+    font-weight: 600;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media (max-width: 959px) {
+    .footer {
+        text-align: center;
+    }
+
+    .download {
+        padding: 40px 15px;
+        align-items: center;
+    }
+}

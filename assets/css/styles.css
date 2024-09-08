@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    --h-color: #242f51;
+    --p-color: #616368;
+    --accent-color: #fcad60;
+    --primary-color: #2400f9;
+    --border-color: rgba(0, 0, 0, 0.1); 
+    --secondary-red-rgb: 245, 86, 102;
+    --secondary-blue-rgb: 36, 98, 255;
+    --secondary-green-rgb: 64, 150, 94;
+    --secondary-yellow-rgb: 252, 173, 96;
+    --logo-font-size: 30px;
+    --hero-font-size: 60px;
+    --text-font-size: 16px;
+    --fonts: Poppins, sans-serif
+}
+
+body {
+    font-size: var(--text-font-size); 
+    font-family: var(--fonts);
+    margin: 0 auto;
+}
+
+h1 { font-size: var(--hero-font-size); }
+h2 { font-size: 36px; }
+
+h1, h2, h3 { color: var(--h-color); }
+p { color: var(--p-color); }
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    color: var(--h-color);
+    text-decoration: none;
+}
+
+.button {
+    color: var(--primary-color);
+    background-color: transparent;
+    font-family: var(--fonts);
+    font-size: var(--text-font-size);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.button-filled {
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 15px 25px;
+    border-radius: 99px;
+}
+
+
+/* Colored icons */
+.feature-icon {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+}
+
+.feature-icon.red { background-color: rgba(var(--secondary-red-rgb), .15); }
+.feature-icon.blue { background-color: rgba(var(--secondary-blue-rgb), .15); }
+.feature-icon.green { background-color: rgba(var(--secondary-green-rgb), .15); }
+.feature-icon.yellow { background-color: rgba(var(--secondary-yellow-rgb), .15); }
+
+.feature-header.red { color: rgba(var(--secondary-red-rgb), 1); }
+.feature-header.blue { color: rgba(var(--secondary-blue-rgb), 1); }
+.feature-header.green { color: rgba(var(--secondary-green-rgb), 1); }
+
+
+.vr {
+    height: 100%;
+    width: 1px;
+    background-color: var(--border-color);
+}
